@@ -1,0 +1,94 @@
+.index {
+  &-special {
+    padding: 48px;
+    background-color: #ffffff;
+    &-title {
+      font-size: 36px;
+      text-align: center;
+    }
+    &-content {
+      padding: 24px 0 24px 0;
+    }
+    &-item {
+      display: flex;
+      gap: 48px;
+      margin: 32px 0;
+      &-grid {
+        position: relative;
+        padding: 24px 48px;
+        width: 50%;
+        img {
+          width: 100%;
+          box-shadow: 0 0 20px #000000;
+        }
+        &-title {
+          display: block;
+          margin-top: 24px;
+          margin-bottom: 16px;
+          font-size: 20px;
+        }
+        &-content {
+          display: block;
+        }
+      }
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+      &:nth-child(2n) &-grid:nth-child(2) &-title,
+      &:nth-child(2n) &-grid:nth-child(2) &-content {
+        text-align: right;
+      }
+      &:nth-child(2n) &-grid:nth-child(2)::after {
+        content: '';
+        position: absolute;
+        right: -24px;
+        top: -16px;
+        width: 1px;
+        height: calc(100% + 32px);
+        background-color: #cccccc;
+        box-shadow: 0 0 10px #00000088;
+      }
+      &:nth-child(2n + 1) &-grid:first-child &-title,
+      &:nth-child(2n + 1) &-grid:first-child &-content {
+        text-align: right;
+      }
+      &:nth-child(2n + 1) &-grid:first-child::after {
+        content: '';
+        position: absolute;
+        right: -24px;
+        top: -16px;
+        width: 1px;
+        height: calc(100% + 32px);
+        background-color: #cccccc;
+        box-shadow: 0 0 10px #00000088;
+      }
+      &:nth-child(2) &-grid:last-child::after {
+        top: 0;
+        height: calc(100% + 16px);
+      }
+      &:last-child &-grid:last-child::after {
+        height: calc(100% + 16px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .index {
+    &-special {
+      &-item {
+        display: block;
+        &-grid {
+          padding: 0;
+          width: 100%;
+          &-content {
+            margin-bottom: 32px;
+          }
+          &::after {
+            content: none !important;
+          }
+        }
+      }
+    }
+  }
+}

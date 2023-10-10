@@ -1,0 +1,24 @@
+.authenticate {
+  text-align: center;
+  color: rgb(72, 72, 72);
+  .index-slider {
+    display: flex;
+    height: calc(100vh - 646px);
+    justify-content: center;
+  }
+}
+
+.page.authenticate {
+  .page-slider {
+    min-height: calc(100vh - 384px);
+  }
+  .page-content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .page.authenticate .page-slider {
+    min-height: calc(100vh - 72px - 294px) !important;
+  }
+}

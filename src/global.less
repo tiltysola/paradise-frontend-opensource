@@ -1,0 +1,56 @@
+* {
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400 !important;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'PingFang SC',
+    'Microsoft YaHei',
+    STXihei,
+    'Segoe UI',
+    'Helvetica Neue',
+    Helvetica,
+    'Hiragino Sans GB',
+    Arial,
+    sans-serif;
+  outline: none;
+  user-select: none;
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #ececec;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 8px;
+  }
+  &::-webkit-scrollbar-button {
+    background-color: transparent;
+    height: 0;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: 'Inconsolata', 'Monaco', 'Consolas', 'Andale Mono',
+    'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 1279px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+  table {
+    word-break: break-all;
+  }
+}

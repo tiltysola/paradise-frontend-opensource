@@ -1,0 +1,46 @@
+.admin {
+  &-user {
+    margin: 40px 0;
+    &-table {
+      width: 100%;
+      border: 0;
+      thead {
+        tr {
+          font-size: 12px;
+          background-color: #ececec;
+        }
+        th {
+          padding: 8px 12px;
+          border: none !important;
+          text-align: left;
+          font-weight: 400;
+        }
+      }
+      tbody {
+        td {
+          padding: 12px;
+          border-bottom: 1px solid #ececec;
+          text-align: left;
+          font-size: 14px;
+          &:first-child {
+            padding: 6px;
+          }
+        }
+      }
+      img {
+        width: 32px;
+        height: 32px;
+      }
+      .button.button-link {
+        padding: 8px 0;
+        color: #252934;
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+        &:hover {
+          color: #252934;
+        }
+      }
+    }
+  }
+}

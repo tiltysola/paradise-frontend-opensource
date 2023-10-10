@@ -1,0 +1,42 @@
+.admin {
+  &-nav {
+    &-list {
+      padding: 0;
+      list-style: none;
+      border-bottom: 1px solid #ececec;
+    }
+    &-item {
+      position: relative;
+      display: inline-block;
+      padding: 6px 0 12px 0;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: #252934;
+        transition: all 0.3s;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+      &.active {
+        span {
+          color: #000000;
+        }
+        &::after {
+          width: 100%;
+          background-color: #000000;
+        }
+      }
+    }
+  }
+}

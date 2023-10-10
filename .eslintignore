@@ -1,0 +1,25 @@
+# node
+node_modules
+package-lock.json
+pnpm-lock.yaml
+
+# build files
+dist
+build/release.js
+
+# cache files
+cache
+
+# public
+logs
+public
+
+# test files
+coverage
+
+# system
+.DS_Store
+
+# others
+**/*.d.ts
+__test__

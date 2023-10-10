@@ -1,0 +1,56 @@
+.button {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+  &-default {
+    padding: 8px 20px;
+    border: 1px solid #ffffff88;
+    border-radius: 6px;
+    color: #ffffff;
+    &:hover {
+      color: #cccccc;
+    }
+  }
+  &-default-dark {
+    padding: 8px 20px;
+    border: 1px solid #252934;
+    border-radius: 6px;
+    &:hover {
+      color: #000000;
+    }
+  }
+  &-link {
+    padding: 8px 20px;
+    color: #ffffff;
+    &:hover {
+      color: #cccccc;
+    }
+  }
+  &-link-dark {
+    padding: 8px 20px;
+    color: #252934;
+    &:hover {
+      color: #000000;
+    }
+  }
+  &-form {
+    padding: 8px 20px;
+    width: 100%;
+    border: 1px solid #00000028;
+    color: #252934;
+    &:hover {
+      color: #000000;
+      border: 1px solid #00000058;
+    }
+    &-danger {
+      color: #ff5858;
+      border: 1px solid #ff585858;
+      &:hover {
+        color: #ff2828;
+        border: 1px solid #ff282858;
+      }
+    }
+  }
+}

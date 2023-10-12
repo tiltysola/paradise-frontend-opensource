@@ -41,7 +41,7 @@ const Index = () => {
               target="_blank"
               rel="noreferrer"
             >
-              #ICP
+              {(window as any).paradiseConvars.icpCode}
             </a>
           </span>
         </div>
